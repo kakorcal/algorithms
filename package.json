@@ -1,0 +1,28 @@
+{
+  "name": "sorting_algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "algorithms.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakorcal/sorting_algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakorcal/sorting_algorithms/issues"
+  },
+  "homepage": "https://github.com/kakorcal/sorting_algorithms#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "locus": "^1.2.0",
+    "mocha": "^2.5.3"
+  }
+}
