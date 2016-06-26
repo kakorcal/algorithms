@@ -1,1 +1,1 @@
-#Sorting Algorithms Practice
+#Sorting and Searching Algorithms Practice
