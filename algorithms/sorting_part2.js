@@ -1,11 +1,15 @@
-function shellSort(){
+
+
+function mergeSort(arr){
 
 }
 
-function mergeSort(){
+function quickSort(arr){
 
 }
 
-function quickSort(){
+function heapSort(arr){
 
 }
+
+module.exports = {};

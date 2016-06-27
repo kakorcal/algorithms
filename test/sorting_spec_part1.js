@@ -60,7 +60,7 @@ describe("Part 1", function() {
 
   });
 
-  xdescribe("#insertionSort", function(){
+  describe("#insertionSort", function(){
 
     let insertionSort = require("../algorithms/sorting_part1").insertionSort;
 
