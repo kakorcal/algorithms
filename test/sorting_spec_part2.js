@@ -6,7 +6,7 @@ describe("Part 2", function() {
 
   describe("#merge", function() {
 
-    let merge = require("../algorithms/helpers").merge;
+    let merge = require("../algorithms/sorting_part2").merge;
 
     it("merges two sorted arrays into a new array", function() {
       expect(merge([1,3,5,7],[2,4,6,8])).to.deep.equal([1,2,3,4,5,6,7,8]);
@@ -16,9 +16,9 @@ describe("Part 2", function() {
 
   });
 
-  describe("#mergeSort", function(){
+  xdescribe("#mergeSort", function(){
 
-    let mergeSort = require("../algorithms/sortingAlgorithmsPart2").mergeSort;
+    let mergeSort = require("../algorithms/sorting_part2").mergeSort;
 
     it("sorts an array of positive numbers", function(){
       expect(mergeSort([3.1,4.5,1,2,5])).to.deep.equal([1,2,3.1,4.5,5]);
@@ -38,9 +38,9 @@ describe("Part 2", function() {
 
   });
 
-  describe("#partition", function() {
+  xdescribe("#partition", function() {
 
-    let partition = require("../algorithms/helpers").partition;
+    let partition = require("../algorithms/sorting_part2").partition;
     let arr = [];
 
     beforeEach(function() {
@@ -68,9 +68,9 @@ describe("Part 2", function() {
 
   });
 
-  describe("#quickSort", function(){
+  xdescribe("#quickSort", function(){
 
-    let quickSort = require("../algorithms/sortingAlgorithmsPart2").quickSort;
+    let quickSort = require("../algorithms/sorting_part2").quickSort;
 
     it("sorts an array of positive numbers", function(){
       expect(quickSort([3.1,4.5,1,2,5])).to.deep.equal([1,2,3.1,4.5,5]);
