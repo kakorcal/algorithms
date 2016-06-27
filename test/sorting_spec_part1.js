@@ -6,7 +6,7 @@ describe("Part 1", function() {
 
   describe("#swap", function() {
 
-    let swap = require("../algorithms/helpers").swap;
+    let swap = require("../algorithms/sorting_part1").swap;
     
     it("swaps to elements in an array", function() {
       let arr = [6, 7, 4, 3, 1];
@@ -18,7 +18,7 @@ describe("Part 1", function() {
 
   describe("#bubbleSort", function(){
 
-    let bubbleSort = require("../algorithms/sortingAlgorithmsPart1").bubbleSort;
+    let bubbleSort = require("../algorithms/sorting_part1").bubbleSort;
 
     it("sorts an array of positive numbers", function(){
       expect(bubbleSort([3.1,4.5,1,2,5])).to.deep.equal([1,2,3.1,4.5,5]);
@@ -40,7 +40,7 @@ describe("Part 1", function() {
 
   describe("#selectionSort", function(){
 
-    let selectionSort = require("../algorithms/sortingAlgorithmsPart1").selectionSort;
+    let selectionSort = require("../algorithms/sorting_part1").selectionSort;
 
     it("sorts an array of positive numbers", function(){
       expect(selectionSort([3.1,4.5,1,2,5])).to.deep.equal([1,2,3.1,4.5,5]);
@@ -60,9 +60,9 @@ describe("Part 1", function() {
 
   });
 
-  describe("#insertionSort", function(){
+  xdescribe("#insertionSort", function(){
 
-    let insertionSort = require("../algorithms/sortingAlgorithmsPart1").insertionSort;
+    let insertionSort = require("../algorithms/sorting_part1").insertionSort;
 
     it("sorts an array of positive numbers", function(){
       expect(insertionSort([3.1,4.5,1,2,5])).to.deep.equal([1,2,3.1,4.5,5]);
