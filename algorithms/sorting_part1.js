@@ -32,10 +32,14 @@ function selectionSort(arr){
 
 function insertionSort(arr){
   for(let i = 0; i < arr.length; i++){
+    // save current value
     let current = arr[i];
     for(var j = i - 1; j >= 0 && arr[j] > current; j--){
-        arr[j + 1] = arr[j];
+      // only loop if elements on left of the index i is greater than the saved value
+      // push every element to the right 
+      arr[j + 1] = arr[j];
     }
+    // inserting the current value to where the inner for loop stopped
     arr[j + 1] = current;
   }
   return arr;
