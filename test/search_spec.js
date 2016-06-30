@@ -30,7 +30,7 @@ describe("#linearSearch", function(){
 
 });
 
-xdescribe("#binarySearch", function(){
+describe("#binarySearch", function(){
   
   it("does not use indexOf", function() {
     expect(positiveArr.binarySearch.toString()).to.not.contain('indexOf');
