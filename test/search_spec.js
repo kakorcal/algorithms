@@ -1,7 +1,7 @@
 'use strict'
 
 let expect = require('chai').expect;
-let Array = require('../searchAlgorithms').Array;
+let Array = require('../algorithms/search').Array;
 let positiveArr = [1,2,3,4,5,6];
 let negativeArr = [-5,-4,-3,-2,-1];
 let decimalArr = [1.1,2.4,5.5,5.6,5.7];
@@ -30,7 +30,7 @@ describe("#linearSearch", function(){
 
 });
 
-describe("#binarySearch", function(){
+xdescribe("#binarySearch", function(){
   
   it("does not use indexOf", function() {
     expect(positiveArr.binarySearch.toString()).to.not.contain('indexOf');
