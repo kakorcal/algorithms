@@ -25,7 +25,12 @@ function partition(arr, left, right){
 }
 
 function mergeSort(arr){
-
+  // if the array length is 1, return that array
+  if(arr.length === 1){
+    return arr;
+  }else{
+    return merge(mergeSort(arr.slice(0, arr.length/2)), mergeSort(arr.slice(arr.length/2, arr.length)));
+  }
 }
 
 function quickSort(arr){

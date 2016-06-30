@@ -16,7 +16,7 @@ describe("Part 2", function() {
 
   });
 
-  xdescribe("#mergeSort", function(){
+  describe("#mergeSort", function(){
 
     let mergeSort = require("../algorithms/sorting_part2").mergeSort;
 
