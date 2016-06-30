@@ -38,7 +38,7 @@ describe("Part 2", function() {
 
   });
 
-  xdescribe("#partition", function() {
+  describe("#partition", function() {
 
     let partition = require("../algorithms/sorting_part2").partition;
     let arr = [];
@@ -68,7 +68,7 @@ describe("Part 2", function() {
 
   });
 
-  xdescribe("#quickSort", function(){
+  describe("#quickSort", function(){
 
     let quickSort = require("../algorithms/sorting_part2").quickSort;
 
