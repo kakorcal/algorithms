@@ -5,13 +5,13 @@ let Array = require('../algorithms/search').Array;
 let positiveArr = [1,2,3,4,5,6];
 let negativeArr = [-5,-4,-3,-2,-1];
 let decimalArr = [1.1,2.4,5.5,5.6,5.7];
-
+    
 describe("#linearSearch", function(){
-  
+
   it("does not use indexOf", function() {
     expect(positiveArr.linearSearch.toString()).to.not.contain('indexOf');
   });
-
+  
   it("finds items in an array of positive numbers", function(){
     expect(positiveArr.linearSearch(3)).to.equal(2);
   });

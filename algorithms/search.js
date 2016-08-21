@@ -39,6 +39,9 @@ Array.prototype.binarySearch = function(val){
   return search(this);
 };
 
+//***************************************************************************
+
+  // RECURSIVE ATTEMPT  
   // function search(arr){
   //   // if the array is empty, return -1;
   //   if(!arr.length) return -1;
@@ -56,4 +59,7 @@ Array.prototype.binarySearch = function(val){
   //     return search(arr.slice(middle, arr.length));
   //   }
   // }
+
+//***************************************************************************
+
 module.exports = { Array };

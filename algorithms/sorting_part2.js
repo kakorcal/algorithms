@@ -9,17 +9,18 @@ function merge(arr1, arr2){
   // 2. if the first element in arr1 is less than the first element in 
     // arr2, push the first element in arr1 to the new array, and move the 
     // pointer for arr1 one spot to the right. Otherwise, do this for arr2.
-  while(i1 < arr1.length || i2 < arr2.length){
+  while(true){
     // 3. Repeat this process until you've gone through one of the arrays
       // return the new array, concatenated with whatever elements are remaining 
       // from the array that you haven't exhausted yet.  
     if(arr1[i1] < arr2[i2]){
       arr.push(arr1[i1++]);
-    }else{
+    }else if(arr1[i1] > arr2[i2]){
       arr.push(arr2[i2++]);
-    }  
+    }else{
+      return arr.concat(arr1.slice(i1), arr2.slice(i2));
+    }
   }
-  return arr;
 }
 
 function mergeSort(arr){
